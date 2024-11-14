@@ -1,5 +1,10 @@
 import { readDirectories } from "../state.js"
 
+// Processes the "MOVE" command
+// Expects 2 values in params.
+// The first value is the path of the directory to be moved.
+// The second value is the path of the directory that should
+// be the new parent of the directory being moved.
 export const moveDirectory = params => {
   const directoryPathToMove = params[0]
   const newParentDirectoryPath = params[1]

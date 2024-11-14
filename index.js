@@ -2,6 +2,7 @@ import { printAvailableCommands } from "./commands/utils.js"
 import fs from "fs"
 import { runCommand } from "./commands/index.js"
 
+// Main runner for the program. Parses input and runs the provided commands.
 const run = () => {
   if (process.argv.length < 3) {
     console.error(

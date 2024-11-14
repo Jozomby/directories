@@ -1,5 +1,8 @@
 import { readDirectories, writeDirectories } from "../state.js"
 
+// Processes the "CREATE" command
+// Expects a single value in `params` specifying the path
+// of the directory to be created
 export const createDirectory = params => {
   const newDirectoryPath = params[0]
   if (!newDirectoryPath) {

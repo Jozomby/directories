@@ -1,3 +1,5 @@
+// Used by the "help" command line command
+// Prints the commands supported by the program
 export const printAvailableCommands = () => {
   console.log(
     "CREATE - Creates a directory. Must specify full directory path. Example: CREATE fruits/apples"

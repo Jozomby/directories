@@ -1,5 +1,8 @@
 import { readDirectories } from "../state.js"
 
+// Processes the DELETE command
+// Expects a single value in `params` specifying the path
+// of the directory to be deleted
 export const deleteDirectory = params => {
   const directoryPath = params[0]
   if (!directoryPath) {

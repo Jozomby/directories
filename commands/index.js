@@ -10,6 +10,8 @@ const COMMANDS = {
   list: listDirectories
 }
 
+// Takes a command string such as "CREATE fruits/apples"
+// and finds the correct function to run that command, and runs it
 export const runCommand = command => {
   console.log(command)
   const commandPieces = command.split(" ")

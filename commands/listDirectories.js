@@ -1,5 +1,8 @@
 import { readDirectories } from "../state.js"
 
+// Processes the "LIST" command
+// Takes no parameters. Prints a formatted representation
+// of the current state of the directories.
 export const listDirectories = () => {
   const directories = readDirectories()
   printDirectories(directories, "")
