@@ -1,0 +1,19 @@
+{
+  "name": "directories",
+  "version": "1.0.0",
+  "description": "coding challenge",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Jozomby/directories.git"
+  },
+  "author": "Daniel Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jozomby/directories/issues"
+  },
+  "homepage": "https://github.com/Jozomby/directories#readme"
+}
