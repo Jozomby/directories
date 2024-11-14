@@ -3,7 +3,6 @@ import fs from "fs"
 import { runCommand } from "./commands/index.js"
 
 const run = () => {
-  console.log("Starting Directories...")
   if (process.argv.length < 3) {
     console.error(
       "Usage: provide the location of the file containing the commands to be run, or 'help' to show available commands"
@@ -22,10 +21,13 @@ const run = () => {
   } catch (err) {
     console.error(`Could not read commands file. Error: ${err}`)
   }
-  for (const command of commands) {
-    runCommand(command)
+  try {
+    for (const command of commands) {
+      runCommand(command)
+    }
+  } catch (err) {
+    console.error(`Failed to run all commands. Error: ${err}`)
   }
-  console.log("Finished Directories")
 }
 
 run()
