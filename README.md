@@ -1,6 +1,6 @@
 # Directories Coding Challenge
 ## How to run
-This is run from the command line. You must have npm/yarn and Node installed. To run:
+This is run from the command line. You must have npm (or yarn) and Node installed. To run:
 - `npm install`
 - `npm run start` {FILE_LOCATION}
 

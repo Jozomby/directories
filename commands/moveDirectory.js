@@ -28,6 +28,12 @@ export const moveDirectory = params => {
 
   const directoryNameToMove = sourcePieces[sourcePieces.length - 1]
   const tempDirectory = sourceDirectoryTracker[directoryNameToMove]
+  if (!tempDirectory) {
+    console.error(
+      `Cannot move ${directoryPathToMove} - ${directoryNameToMove} does not exist`
+    )
+    return
+  }
 
   // Traverse the directory structure to get to the location we
   // want to move the directory to

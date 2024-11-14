@@ -23,5 +23,11 @@ export const deleteDirectory = params => {
   }
 
   const directoryNameToDelete = pathPieces[pathPieces.length - 1]
+  if (!directoryTracker[directoryNameToDelete]) {
+    console.error(
+      `Cannot delete ${directoryPath} - ${directoryNameToDelete} does not exist`
+    )
+    return
+  }
   delete directoryTracker[directoryNameToDelete]
 }

@@ -1,0 +1,15 @@
+CREATE blue
+CREATE blue
+DELETE yellow
+DELETE blue/aqua
+CREATE blue/aqua
+CREATE blue/aqua/aquamarine
+LIST
+DELETE blue/aqua
+LIST
+CREATE blue/aqua/aquamarine
+MOVE blue/aqua green
+CREATE green
+MOVE blue/aqua green
+MOVE teal green
+LIST
