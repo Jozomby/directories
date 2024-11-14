@@ -11,5 +11,4 @@ export const printAvailableCommands = () => {
     "DELETE - Deletes the directory specified. Example: DELETE fruits/bananas"
   )
   console.log("LIST - Lists the full directory structure")
-  console.log("TODO: print commands")
 }
